@@ -15,12 +15,12 @@
   "dependencies": {
     "@vending-machine/core": "workspace:*",
     "@vending-machine/types": "workspace:*",
-    "react": "^18.3.1"
+    "react": "^19.1.0"
   },
   "devDependencies": {
-    "@types/react": "^18.3.3",
-    "prettier": "^3.3.3",
-    "typescript": "5.5.3"
+    "@types/react": "^19.1.2",
+    "prettier": "^3.5.3",
+    "typescript": "5.8.3"
   },
   "peerDependencies": {
     "react": "^18.0.0"
