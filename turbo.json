@@ -6,6 +6,6 @@
     "dev": { "cache": false, "persistent": true },
     "lint": { "outputs": [] },
     "format": { "cache": false, "outputs": [] },
-    "check-types": { "outputs": [] }
+    "check-types": { "dependsOn": ["^build"], "outputs": [] }
   }
 }
