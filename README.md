@@ -3,13 +3,13 @@
 ## Installation
 
 ```
-npm i
+pnpm install
 ```
 
 ## Start
 
 ```
-npm run dev
+pnpm run dev
 ```
 
 ## Mechanism
