@@ -1,5 +1,4 @@
-import { Cash, CashCurrency, Coin, Paper } from "../types/payment";
-import { Price } from "../types/product";
+import { Cash, CashCurrency, Coin, Paper, Price } from "@vending-machine/types";
 import autoBind from "auto-bind";
 
 type SupportCash = Coin["value"] | Paper["value"];
@@ -98,10 +97,7 @@ export class CashVault {
           latestInputCashStock - 1,
         );
 
-        yield {
-          kind: "cash",
-          value: { ...latestInputCash },
-        } as Cash;
+        yield { kind: "cash", value: { ...latestInputCash } } as Cash;
       } else {
         break;
       }
@@ -130,10 +126,7 @@ export class CashVault {
         change -= largestSubtractableCash.value;
         this.#cashStock.set(cashSignature, cashStock - 1);
 
-        yield {
-          kind: "cash",
-          value: { ...largestSubtractableCash },
-        } as Cash;
+        yield { kind: "cash", value: { ...largestSubtractableCash } } as Cash;
       } else {
         throw new Error("현금 재고가 부족합니다");
       }

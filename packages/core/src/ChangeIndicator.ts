@@ -1,4 +1,4 @@
-import { CashCurrency } from "../types/payment";
+import { CashCurrency } from "@vending-machine/types";
 import autoBind from "auto-bind";
 
 export class ChangeIndicator {

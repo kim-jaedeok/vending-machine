@@ -1,5 +1,5 @@
-import { VendingMachine, VendingMachineParams } from "../class/VendingMachine";
-import { VendingMachine as IVendingMachine } from "../types/vendingMachine";
+import { VendingMachine, VendingMachineParams } from "@vending-machine/core";
+import { VendingMachine as IVendingMachine } from "@vending-machine/types";
 import { useState } from "react";
 
 export const useVendingMachine = (

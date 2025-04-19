@@ -1,6 +1,9 @@
-import { Card, CashCurrency } from "../../types/payment";
-import { PaymentReader } from "../../types/paymentReader";
-import { Price } from "../../types/product";
+import {
+  Card,
+  CashCurrency,
+  PaymentReader,
+  Price,
+} from "@vending-machine/types";
 import autoBind from "auto-bind";
 
 export class CardReader implements PaymentReader {
