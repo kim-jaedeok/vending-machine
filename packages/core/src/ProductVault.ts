@@ -1,4 +1,4 @@
-import { Product } from "../types/product";
+import { Product } from "@vending-machine/types";
 import autoBind from "auto-bind";
 
 export class ProductVault {
@@ -47,12 +47,7 @@ export class ProductVault {
 
     this.#itemStock.set(productName, this.#getStockOf(productName) - quantity);
 
-    return {
-      ...product,
-      price: {
-        ...product.price,
-      },
-    } as Product;
+    return { ...product, price: { ...product.price } } as Product;
   }
 
   #getStockOf(product: Product["name"]) {

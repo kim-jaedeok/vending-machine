@@ -8,6 +8,9 @@ dist-ssr
 *.local
 *.tsbuildinfo
 
+# Turbo
+.turbo
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

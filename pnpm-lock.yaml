@@ -69,6 +69,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.12
         version: 3.4.17
+      turbo:
+        specifier: ^2.5.0
+        version: 2.5.0
       typescript:
         specifier: 5.5.3
         version: 5.5.3
@@ -81,6 +84,105 @@ importers:
       vite-plugin-checker:
         specifier: ^0.8.0
         version: 0.8.0(eslint@9.25.0(jiti@2.4.2))(optionator@0.9.4)(typescript@5.5.3)(vite@5.4.18(@types/node@22.14.1))
+
+  packages/core:
+    dependencies:
+      '@vending-machine/types':
+        specifier: workspace:*
+        version: link:../types
+      auto-bind:
+        specifier: ^5.0.1
+        version: 5.0.1
+    devDependencies:
+      prettier:
+        specifier: ^3.3.3
+        version: 3.5.3
+      typescript:
+        specifier: 5.5.3
+        version: 5.5.3
+
+  packages/playground/react:
+    dependencies:
+      '@vending-machine/core':
+        specifier: workspace:*
+        version: link:../../core
+      '@vending-machine/react':
+        specifier: workspace:*
+        version: link:../../react
+      '@vending-machine/types':
+        specifier: workspace:*
+        version: link:../../types
+      classnames:
+        specifier: ^2.5.1
+        version: 2.5.1
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.3.1
+        version: 18.3.1(react@18.3.1)
+    devDependencies:
+      '@types/react':
+        specifier: ^18.3.3
+        version: 18.3.20
+      '@types/react-dom':
+        specifier: ^18.3.0
+        version: 18.3.6(@types/react@18.3.20)
+      '@vitejs/plugin-react':
+        specifier: ^4.3.1
+        version: 4.4.1(vite@5.4.18(@types/node@22.14.1))
+      autoprefixer:
+        specifier: ^10.4.20
+        version: 10.4.21(postcss@8.5.3)
+      postcss:
+        specifier: ^8.4.47
+        version: 8.5.3
+      prettier:
+        specifier: ^3.3.3
+        version: 3.5.3
+      tailwindcss:
+        specifier: ^3.4.12
+        version: 3.4.17
+      typescript:
+        specifier: 5.5.3
+        version: 5.5.3
+      vite:
+        specifier: ^5.4.6
+        version: 5.4.18(@types/node@22.14.1)
+      vite-plugin-checker:
+        specifier: ^0.8.0
+        version: 0.8.0(eslint@9.25.0(jiti@2.4.2))(optionator@0.9.4)(typescript@5.5.3)(vite@5.4.18(@types/node@22.14.1))
+
+  packages/react:
+    dependencies:
+      '@vending-machine/core':
+        specifier: workspace:*
+        version: link:../core
+      '@vending-machine/types':
+        specifier: workspace:*
+        version: link:../types
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+    devDependencies:
+      '@types/react':
+        specifier: ^18.3.3
+        version: 18.3.20
+      prettier:
+        specifier: ^3.3.3
+        version: 3.5.3
+      typescript:
+        specifier: 5.5.3
+        version: 5.5.3
+
+  packages/types:
+    devDependencies:
+      prettier:
+        specifier: ^3.3.3
+        version: 3.5.3
+      typescript:
+        specifier: 5.5.3
+        version: 5.5.3
 
 packages:
 
@@ -1641,6 +1743,40 @@ packages:
 
   ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
+
+  turbo-darwin-64@2.5.0:
+    resolution: {integrity: sha512-fP1hhI9zY8hv0idym3hAaXdPi80TLovmGmgZFocVAykFtOxF+GlfIgM/l4iLAV9ObIO4SUXPVWHeBZQQ+Hpjag==}
+    cpu: [x64]
+    os: [darwin]
+
+  turbo-darwin-arm64@2.5.0:
+    resolution: {integrity: sha512-p9sYq7kXH7qeJwIQE86cOWv/xNqvow846l6c/qWc26Ib1ci5W7V0sI5thsrP3eH+VA0d+SHalTKg5SQXgNQBWA==}
+    cpu: [arm64]
+    os: [darwin]
+
+  turbo-linux-64@2.5.0:
+    resolution: {integrity: sha512-1iEln2GWiF3iPPPS1HQJT6ZCFXynJPd89gs9SkggH2EJsj3eRUSVMmMC8y6d7bBbhBFsiGGazwFIYrI12zs6uQ==}
+    cpu: [x64]
+    os: [linux]
+
+  turbo-linux-arm64@2.5.0:
+    resolution: {integrity: sha512-bKBcbvuQHmsX116KcxHJuAcppiiBOfivOObh2O5aXNER6mce7YDDQJy00xQQNp1DhEfcSV2uOsvb3O3nN2cbcA==}
+    cpu: [arm64]
+    os: [linux]
+
+  turbo-windows-64@2.5.0:
+    resolution: {integrity: sha512-9BCo8oQ7BO7J0K913Czbc3tw8QwLqn2nTe4E47k6aVYkM12ASTScweXPTuaPFP5iYXAT6z5Dsniw704Ixa5eGg==}
+    cpu: [x64]
+    os: [win32]
+
+  turbo-windows-arm64@2.5.0:
+    resolution: {integrity: sha512-OUHCV+ueXa3UzfZ4co/ueIHgeq9B2K48pZwIxKSm5VaLVuv8M13MhM7unukW09g++dpdrrE1w4IOVgxKZ0/exg==}
+    cpu: [arm64]
+    os: [win32]
+
+  turbo@2.5.0:
+    resolution: {integrity: sha512-PvSRruOsitjy6qdqwIIyolv99+fEn57gP6gn4zhsHTEcCYgXPhv6BAxzAjleS8XKpo+Y582vTTA9nuqYDmbRuA==}
+    hasBin: true
 
   type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
@@ -3358,6 +3494,33 @@ snapshots:
       typescript: 5.5.3
 
   ts-interface-checker@0.1.13: {}
+
+  turbo-darwin-64@2.5.0:
+    optional: true
+
+  turbo-darwin-arm64@2.5.0:
+    optional: true
+
+  turbo-linux-64@2.5.0:
+    optional: true
+
+  turbo-linux-arm64@2.5.0:
+    optional: true
+
+  turbo-windows-64@2.5.0:
+    optional: true
+
+  turbo-windows-arm64@2.5.0:
+    optional: true
+
+  turbo@2.5.0:
+    optionalDependencies:
+      turbo-darwin-64: 2.5.0
+      turbo-darwin-arm64: 2.5.0
+      turbo-linux-64: 2.5.0
+      turbo-linux-arm64: 2.5.0
+      turbo-windows-64: 2.5.0
+      turbo-windows-arm64: 2.5.0
 
   type-check@0.4.0:
     dependencies:

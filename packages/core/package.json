@@ -1,0 +1,22 @@
+{
+  "name": "@vending-machine/core",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.{ts,js}\"",
+    "format": "prettier --write \"src/**/*.{ts,js,json}\""
+  },
+  "dependencies": {
+    "@vending-machine/types": "workspace:*",
+    "auto-bind": "^5.0.1"
+  },
+  "devDependencies": {
+    "typescript": "5.5.3",
+    "prettier": "^3.3.3"
+  }
+}

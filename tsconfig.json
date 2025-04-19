@@ -1,4 +1,34 @@
 {
+  "compilerOptions": {
+    "target": "ES6",
+    "useDefineForClassFields": true,
+    "lib": ["ES6", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "jsx": "react-jsx",
+
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@vending-machine/types": ["packages/types/src/index.ts"],
+      "@vending-machine/types/*": ["packages/types/src/*"],
+      "@vending-machine/core": ["packages/core/src/index.ts"],
+      "@vending-machine/core/*": ["packages/core/src/*"],
+      "@vending-machine/react": ["packages/react/src/index.ts"],
+      "@vending-machine/react/*": ["packages/react/src/*"],
+      "@vending-machine/playground-react/*": ["packages/playground/react/src/*"]
+    }
+  },
+  "exclude": ["node_modules", "**/dist/**"],
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },

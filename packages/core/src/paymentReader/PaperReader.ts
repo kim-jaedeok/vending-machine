@@ -1,5 +1,4 @@
-import { Paper } from "../../types/payment";
-import { PaymentReader } from "../../types/paymentReader";
+import { Paper, PaymentReader } from "@vending-machine/types";
 import autoBind from "auto-bind";
 
 export class PaperReader implements PaymentReader {

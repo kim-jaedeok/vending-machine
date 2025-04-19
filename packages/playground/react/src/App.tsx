@@ -1,11 +1,13 @@
-import { CashVault } from "./class/CashVault";
-import { ChangeIndicator } from "./class/ChangeIndicator";
-import { ProductVault } from "./class/ProductVault";
-import { CardReader } from "./class/paymentReader/CardReader";
-import { CoinReader } from "./class/paymentReader/CoinReader";
-import { PaperReader } from "./class/paymentReader/PaperReader";
-import { useVendingMachine } from "./hook/useVendingMachine";
-import { Card } from "./types/payment";
+import {
+  CardReader,
+  CashVault,
+  ChangeIndicator,
+  CoinReader,
+  PaperReader,
+  ProductVault,
+} from "@vending-machine/core";
+import { useVendingMachine } from "@vending-machine/react";
+import { Card } from "@vending-machine/types";
 
 function App() {
   const vendingMachine = useVendingMachine({
@@ -29,36 +31,11 @@ function App() {
     changeIndicator: new ChangeIndicator(0, "원"),
     cashVault: new CashVault(
       [
-        {
-          kind: "coin",
-          value: 100,
-          currency: "원",
-          stock: 10,
-        },
-        {
-          kind: "coin",
-          value: 500,
-          currency: "원",
-          stock: 10,
-        },
-        {
-          kind: "paper",
-          value: 1000,
-          currency: "원",
-          stock: 10,
-        },
-        {
-          kind: "paper",
-          value: 5000,
-          currency: "원",
-          stock: 10,
-        },
-        {
-          kind: "paper",
-          value: 10000,
-          currency: "원",
-          stock: 10,
-        },
+        { kind: "coin", value: 100, currency: "원", stock: 10 },
+        { kind: "coin", value: 500, currency: "원", stock: 10 },
+        { kind: "paper", value: 1000, currency: "원", stock: 10 },
+        { kind: "paper", value: 5000, currency: "원", stock: 10 },
+        { kind: "paper", value: 10000, currency: "원", stock: 10 },
       ],
       100,
     ),
