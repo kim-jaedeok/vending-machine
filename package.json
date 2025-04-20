@@ -9,7 +9,7 @@
   },
   "workspaces": [
     "packages/*",
-    "packages/playground/*"
+    "packages/applications/*"
   ],
   "scripts": {
     "prepare": "husky",
@@ -18,7 +18,13 @@
     "preview": "turbo preview",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,json,html}\"",
-    "check-types": "turbo check-types"
+    "check-types": "turbo check-types",
+    "dev:react": "turbo dev --filter=@vending-machine/applications-react",
+    "dev:react-threejs": "turbo dev --filter=@vending-machine/applications-react-threejs",
+    "build:react": "turbo build --filter=@vending-machine/applications-react",
+    "build:react-threejs": "turbo build --filter=@vending-machine/applications-react-threejs",
+    "preview:react": "turbo preview --filter=@vending-machine/applications-react",
+    "preview:react-threejs": "turbo preview --filter=@vending-machine/applications-react-threejs"
   },
   "dependencies": {
     "auto-bind": "^5.0.1",

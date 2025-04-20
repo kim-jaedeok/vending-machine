@@ -7,7 +7,8 @@
 - `packages/types`: 타입 정의
 - `packages/core`: 자판기의 핵심 로직과 클래스
 - `packages/react`: React용 훅 라이브러리
-- `packages/playground/react`: 자판기 React 애플리케이션 예제
+- `packages/applications/react`: 자판기 React 애플리케이션
+- `packages/applications/react-threejs`: 자판기 3D 시각화를 위한 React-ThreeJS 애플리케이션
 
 ## 개발
 
@@ -15,21 +16,24 @@
 # 의존성 설치
 pnpm install
 
-# 개발 서버 실행 (모든 패키지)
-pnpm dev
+# React Application Development
+pnpm dev:react
 
-# 특정 패키지만 개발
-cd packages/playground/react && pnpm dev
+# React-ThreeJS Application Development
+pnpm dev:react-threejs
 ```
 
 ## 빌드
 
 ```bash
-# 모든 패키지 빌드
+# 모든 패키지 Build
 pnpm build
 
-# 특정 패키지만 빌드
-cd packages/react && pnpm build
+# React Application Build
+pnpm build:react
+
+# React-ThreeJS Application Build
+pnpm build:react-threejs
 ```
 
 ## 코드 포맷팅 및 린트

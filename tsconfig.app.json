@@ -6,7 +6,7 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["packages/playground/react/src"],
+  "include": ["packages/applications/react/src"],
   "references": [
     { "path": "./packages/types" },
     { "path": "./packages/core" },
