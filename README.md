@@ -7,8 +7,8 @@
 - `packages/types`: 타입 정의
 - `packages/core`: 자판기의 핵심 로직과 클래스
 - `packages/react`: React용 훅 라이브러리
-- `packages/playground/react`: 자판기 React 애플리케이션 예제
-- `packages/playground/react-threejs`: 자판기 3D 시각화를 위한 React-ThreeJS 애플리케이션 예제
+- `packages/applications/react`: 자판기 React 애플리케이션
+- `packages/applications/react-threejs`: 자판기 3D 시각화를 위한 React-ThreeJS 애플리케이션
 
 ## 개발
 

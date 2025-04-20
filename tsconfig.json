@@ -25,7 +25,9 @@
       "@vending-machine/core/*": ["packages/core/src/*"],
       "@vending-machine/react": ["packages/react/src/index.ts"],
       "@vending-machine/react/*": ["packages/react/src/*"],
-      "@vending-machine/playground-react/*": ["packages/playground/react/src/*"]
+      "@vending-machine/applications-react/*": [
+        "packages/applications/react/src/*"
+      ]
     }
   },
   "exclude": ["node_modules", "**/dist/**"],

@@ -1,4 +1,4 @@
 packages:
   # 모든 패키지 포함
   - "packages/*"
-  - "packages/playground/*"
+  - "packages/applications/*"
